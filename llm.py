@@ -473,6 +473,9 @@ class Llama(nn.Module):
 ############ RUNNING LLM.PY IN INFERENCE MODE########
 #####################################################
 
+import warnings
+warnings.filterwarnings("ignore")
+
 if __name__ == "__main__":  
 
     parser = argparse.ArgumentParser(description='llm')
